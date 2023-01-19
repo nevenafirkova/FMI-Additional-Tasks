@@ -23,7 +23,10 @@ Additional tasks from Plovdiv University "Paisii Hilendarski"
 2
 1</i>
 </p>
-
+<p>
+</p>
+<p>
+</p>
 <p>
 <b>Задача 1-Версия2:</b>
 </p>
