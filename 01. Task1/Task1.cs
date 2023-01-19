@@ -2,8 +2,6 @@
 int inputNumber = int.Parse(Console.ReadLine());
 int inputNumberLength = inputNumber.ToString().Length;
 
-//CHANGEABLE
-
 //ACTION
 for (int i = inputNumberLength; i >= 1; i--)
 {
