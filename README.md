@@ -1,9 +1,12 @@
 # FMI-Additional-Tasks
 Additional tasks from Plovdiv University "Paisii Hilendarski"
-
+<p>
 <b>УСЛОВИЯ:</b>
+</p>
 
+</p>
 <b>Задача 1:<b>
+</p>
 Напиши програма, в която потребителят да въвежда цяло число (integer), а като изход да извежда цифрите на числото, всяка на нов ред. Например:
 <i>Вход: 12345
 Изход:
