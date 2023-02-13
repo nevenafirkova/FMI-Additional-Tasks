@@ -1,32 +1,32 @@
-﻿//INPUT
+//INPUT
 int wheelsSum = int.Parse(Console.ReadLine());
 
-//ACTIONS
+//ACTION
 int carWheels = 4;
 int truckWheels = 6;
 int motorcycleWheels = 3;
 
+//Combinations Checker
 for (int i = 0; i <= wheelsSum / 4; i++)
 {
-	carWheels *= i;
+    carWheels *= i;
+    for (int j = 0; j <= wheelsSum / 6; j++)
+    {
+	 truckWheels *= j;
+	 for (int k = 0; k <= wheelsSum / 3; k++)
+	 {
+             motorcycleWheels *= k;
 
-	for (int j = 0; j <= wheelsSum / 6; j++)
-	{
-		truckWheels *= j;
-
-		for (int k = 0; k <= wheelsSum / 3; k++)
-		{
-			motorcycleWheels *= k;
-
-            if (wheelsSum == carWheels + truckWheels + motorcycleWheels)
-            {
-                Console.WriteLine($"{carWheels/4} {truckWheels/6} {motorcycleWheels/3}");
-            }
-			motorcycleWheels = 3;
-        }
-        truckWheels = 6;
+             if (wheelsSum == carWheels + truckWheels + motorcycleWheels)
+             {
+	     //OUTPUT
+             Console.WriteLine($"{carWheels/4} {truckWheels/6} {motorcycleWheels/3}");
+             }
+	     motorcycleWheels = 3;
+         }  
+         truckWheels = 6;
     }
-	carWheels = 4;
+    carWheels = 4;
 }
 
 //Група разузнавачи трябвало да проучат състоянието на автопарка на противника.
