@@ -22,7 +22,7 @@ public class PinValidation
         }
         else
         {
-            Console.WriteLine("Your Personal Identification Number not valid!");
+            Console.WriteLine("Your Personal Identification Number is not valid!");
         }
     }
 
