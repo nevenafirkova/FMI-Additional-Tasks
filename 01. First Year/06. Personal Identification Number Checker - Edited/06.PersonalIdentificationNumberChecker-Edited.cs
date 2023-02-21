@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Globalization;
 using System.Reflection;
@@ -25,7 +25,7 @@ public class PinValidation
         if (PinChecker(input, pinInput, ref genderString, ref birthArea, ref bornDate))
         {
             Console.WriteLine("This Personal Identification Number is valid!");
-            Console.WriteLine($"The person owning it is a {genderString} born in {birthArea}, Bulgaria on {bornDate}.");
+            Console.WriteLine($"The person owning it is a {genderString} from {birthArea}, Bulgaria born on {bornDate}.");
         }
         else
         {
