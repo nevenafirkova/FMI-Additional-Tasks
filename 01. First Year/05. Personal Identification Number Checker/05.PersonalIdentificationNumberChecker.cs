@@ -238,8 +238,7 @@ public class PinValidation
         int controlNumber = ((pinInt[0]*2) + (pinInt[1]*4) + (pinInt[2]*8) + (pinInt[3]*5) + (pinInt[4]*10) + (pinInt[5]*9) + (pinInt[6]*7) + (pinInt[7]*3) + (pinInt[8]*6));
 
         double fraction = (double)controlNumber / 11.0;
-        int fractionInt = controlNumber / 11;
-        double remainder = Math.Ceiling((fraction - fractionInt) * 10);
+        int remainder = controlNumber % 11;
 
         double controlNumberFinal = 0;
         if (remainder < 10)
